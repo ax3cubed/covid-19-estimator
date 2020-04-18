@@ -1,13 +1,4 @@
 <?php
-// header('Content-Type: application/json');
-$json = file_get_contents('./input.json');
- 
-// Converts it into a PHP object
-$input_data = json_decode($json);
-
- $output= covid19ImpactEstimator($input_data);
- header('Content-Type: application/json');
- echo $output;
 
 function covid19ImpactEstimator($data)
 {
